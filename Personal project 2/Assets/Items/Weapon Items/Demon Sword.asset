@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64788f4a3ba2fba4cb76456f03d10b88, type: 3}
+  m_Name: Demon Sword
+  m_EditorClassIdentifier: 
+  itemIcon: {fileID: 21300000, guid: 726492b1d23da9a44afd22e5ee8dd934, type: 3}
+  itemName: Sword
+  modelPrefab: {fileID: 4872064038182443777, guid: 8b4229c1cb6e2bb4cbe83d13303b3a90,
+    type: 3}
+  isUnarmed: 0
+  Right_hand_idle: Right_Arm_Idle
+  Left_hand_idle: Left_Arm_Idle
+  Two_Handed_idle: Two hand idle
+  OH_Light_Attack_1: OH_Light_Attack_1
+  OH_Heavy_Attack_1: OH_Heavy_Attack_1
+  Flip_Kick: Flip_Kick
+  OH_Light_Attack_2: OH_Light_Attack_2
+  Two_Handed_Attack_1: Two_Handed_Attack_1
+  Two_Handed_Attack_2: Two_Handed_Attack_2
+  UnarmedAttack1: 
+  UnarmedAttack2: 
+  baseStamina: 20
+  lightStaminaMultiplier: 1
+  heavyStaminaMultiplier: 2
