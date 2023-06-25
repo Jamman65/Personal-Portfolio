@@ -17,9 +17,25 @@ namespace Expense_Tracker.Controllers
         }
         public async Task<ActionResult> Index()
         {
+            string? username = User.Identity.Name;
+
+            var user = _context.Users.FirstOrDefault(u => u.Username == username);
+
+            if (user != null)
+            {
+                var model = new DashboardViewModel
+                {
+                    UserName = user.Name,
+                    ProfilePictureUrl = user.ProfilePicture
+                };
+
+                return View(model);
+            }
+
+
             //Last 7 days 
             DateTime StartDate = DateTime.Today.AddDays(-6);
-            DateTime EndDate = DateTime.Today;
+            DateTime EndDate = DateTime.Today.AddDays(30);
 
             List<Transaction> SelectedTransactions = await _context.Transactions
                 .Include(x => x.Category)
@@ -27,21 +43,21 @@ namespace Expense_Tracker.Controllers
                 .ToListAsync();
 
             //Total income for transactions
-            int TotalIncome = SelectedTransactions.Where(i => i.Category.Type == "Income")
+            float TotalIncome = SelectedTransactions.Where(i => i.Category.Type == "Income")
                 .Sum(j => j.Amount);
-            ViewBag.TotalIncome = TotalIncome.ToString("C0");
+            ViewBag.TotalIncome = TotalIncome.ToString("£0.00");
 
             //Total expense for transactions
-            int TotalExpense = SelectedTransactions
+            float TotalExpense = SelectedTransactions
                 .Where(i => i.Category.Type == "Expense")
                 .Sum(j => j.Amount);
-            ViewBag.TotalExpense = TotalExpense.ToString("C0");
+            ViewBag.TotalExpense = TotalExpense.ToString("£0.00");
 
             //Balance
-            int balance = TotalIncome - TotalExpense;
+            float balance = TotalIncome - TotalExpense;
             CultureInfo culture = CultureInfo.CreateSpecificCulture("en-GB");
             culture.NumberFormat.CurrencyNegativePattern = 1;
-            ViewBag.Balance = String.Format(culture, "{0:C0}", balance);
+            ViewBag.Balance = String.Format(culture, "{0:C2}", balance);
 
 
             //Chart - Expense by category
@@ -52,7 +68,7 @@ namespace Expense_Tracker.Controllers
                 {
                     categoryTitleWithIcon = k.First().Category.Icon + " " + k.First().Category.Title,
                     amount = k.Sum(j => j.Amount),
-                    formattedAmount = k.Sum(j => j.Amount).ToString("C0"),
+                    formattedAmount = k.Sum(j => j.Amount).ToString("C2"),
                 }).OrderByDescending(l => l.amount)
                 .ToList();
 
@@ -79,7 +95,7 @@ namespace Expense_Tracker.Controllers
 
 
             //Combine Income and Expense
-            string[] last7Days = Enumerable.Range(0, 7)
+            string[] last7Days = Enumerable.Range(0, 30)
                 .Select(i => StartDate.AddDays(i).ToString("dd-MMM"))
                 .ToArray();
 
@@ -115,8 +131,8 @@ namespace Expense_Tracker.Controllers
     public class SplineChartData
     {
         public string day;
-        public int income;
-        public int expense;
+        public float income;
+        public float expense;
     }
 }
 

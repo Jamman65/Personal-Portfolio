@@ -1,27 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\James Owen\\Downloads\\ExpenseTrackerJO\\ExpenseTrackerApp\\Expense Tracker\\Expense Tracker.csproj": {}
+    "C:\\Users\\jowen\\Documents\\GitHub\\Game-Dev-Portfolio\\ExpenseTrackerJO\\ExpenseTrackerApp\\Expense Tracker\\Expense Tracker.csproj": {}
   },
   "projects": {
-    "C:\\Users\\James Owen\\Downloads\\ExpenseTrackerJO\\ExpenseTrackerApp\\Expense Tracker\\Expense Tracker.csproj": {
+    "C:\\Users\\jowen\\Documents\\GitHub\\Game-Dev-Portfolio\\ExpenseTrackerJO\\ExpenseTrackerApp\\Expense Tracker\\Expense Tracker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\James Owen\\Downloads\\ExpenseTrackerJO\\ExpenseTrackerApp\\Expense Tracker\\Expense Tracker.csproj",
+        "projectUniqueName": "C:\\Users\\jowen\\Documents\\GitHub\\Game-Dev-Portfolio\\ExpenseTrackerJO\\ExpenseTrackerApp\\Expense Tracker\\Expense Tracker.csproj",
         "projectName": "Expense Tracker",
-        "projectPath": "C:\\Users\\James Owen\\Downloads\\ExpenseTrackerJO\\ExpenseTrackerApp\\Expense Tracker\\Expense Tracker.csproj",
-        "packagesPath": "C:\\Users\\James Owen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\James Owen\\Downloads\\ExpenseTrackerJO\\ExpenseTrackerApp\\Expense Tracker\\obj\\",
+        "projectPath": "C:\\Users\\jowen\\Documents\\GitHub\\Game-Dev-Portfolio\\ExpenseTrackerJO\\ExpenseTrackerApp\\Expense Tracker\\Expense Tracker.csproj",
+        "packagesPath": "C:\\Users\\jowen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jowen\\Documents\\GitHub\\Game-Dev-Portfolio\\ExpenseTrackerJO\\ExpenseTrackerApp\\Expense Tracker\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\James Owen\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\jowen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -86,7 +91,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     }

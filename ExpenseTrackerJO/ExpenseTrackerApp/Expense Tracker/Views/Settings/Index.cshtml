@@ -1,0 +1,35 @@
+﻿@*@model Expense_Tracker.Models.SettingsViewModel
+
+<h2>Settings</h2>
+
+<h3>Edit Name</h3>
+<form asp-action="UpdateName" method="post">
+    <div class="mb-3">
+        <ejs-textbox id="name" placeholder="Name" ejs-for="Name"
+                     floatLabelType="Always" multiline="true"></ejs-textbox>
+    </div>
+    <ejs-button id="submit" type="submit" content="Update Name" cssClass="e-success"></ejs-button>
+</form>
+
+
+<h3>Create User</h3>
+<form asp-action="CreateUser" method="post">
+    <div class="mb-3">
+        <ejs-textbox id="name" placeholder="Name" ejs-for="Name"
+                     floatLabelType="Always" multiline="true"></ejs-textbox>
+    </div>
+    <ejs-button id="submit" type="submit" content="Create User" cssClass="e-success"></ejs-button>
+</form>
+
+
+<hr>
+
+<h3>Upload Profile Picture</h3>
+<form asp-action="UpdateProfilePicture" method="post">
+    <div class="form-group">
+        <label for="profilePicture">Profile Picture:</label>
+        <input type="file" class="form-control-file" id="profilePicture" name="profilePicture">
+    </div>
+    <button type="submit" class="btn btn-primary">Upload Picture</button>
+</form>
+*@

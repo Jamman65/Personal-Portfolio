@@ -9,6 +9,9 @@ namespace Expense_Tracker.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+       
+
+
             migrationBuilder.CreateTable(
                 name: "Categories",
                 columns: table => new
@@ -31,7 +34,7 @@ namespace Expense_Tracker.Migrations
                     TransactionId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     CategoryId = table.Column<int>(type: "int", nullable: false),
-                    Amount = table.Column<int>(type: "int", nullable: false),
+                    Amount = table.Column<float>(type: "float", nullable: false),
                     Note = table.Column<string>(type: "nvarchar(75)", nullable: true),
                     Date = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
