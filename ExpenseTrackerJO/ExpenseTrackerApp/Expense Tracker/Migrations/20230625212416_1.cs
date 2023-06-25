@@ -4,7 +4,7 @@
 
 namespace Expense_Tracker.Migrations
 {
-    public partial class InitialCreate1 : Migration
+    public partial class _1: Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

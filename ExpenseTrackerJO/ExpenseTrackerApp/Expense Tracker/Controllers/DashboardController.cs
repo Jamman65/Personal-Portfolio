@@ -17,21 +17,7 @@ namespace Expense_Tracker.Controllers
         }
         public async Task<ActionResult> Index()
         {
-            string? username = User.Identity.Name;
-
-            var user = _context.Users.FirstOrDefault(u => u.Username == username);
-
-            if (user != null)
-            {
-                var model = new DashboardViewModel
-                {
-                    UserName = user.Name,
-                    ProfilePictureUrl = user.ProfilePicture
-                };
-
-                return View(model);
-            }
-
+           
 
             //Last 7 days 
             DateTime StartDate = DateTime.Today.AddDays(-6);
