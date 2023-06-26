@@ -23,7 +23,7 @@ Welcome to my expense tracker where I have developed an application using ASP.NE
 
 * Detailed Overview of my Portfolio: https://github.com/Jamman65/Game-Dev-Portfolio/wiki
 
-#Set Up
+# Set Up
 
 * Clone the individual expense tracker branch and open the expense tracker application in Visual Studio 2022
 
