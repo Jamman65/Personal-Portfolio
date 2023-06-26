@@ -1,25 +1,20 @@
-# Personal Project (Knights & Nightmares)
-Welcome to my Personal project where I have challenged myself to develop a recreation of Dark Souls using all of the skills that I have gained throughout my university course and my own experience such as:
+# Expense Tracker (ASP.NET C#)
+Welcome to my expense tracker where I have developed an application using ASP.NET, C#, HTML, CSS and SQL which allows users to:
 
-* Reactive AI Systems (State Machines)
 
-* Combat Systems
+* Create individual categories
 
-* Inventory System
-
-* HUD
-
-* Weapons with multiple attack styles and fully equipped with animations to match the specific weapon
-
-* Fully animated player and enemy models
-
-* Equipment with defence bonuses
-
-* Challenging gameplay for each player
-
-* Levelling Up System to increase player stats
-
-* Challenging Boss battle with two phases
+* Create new transactions
+  
+* Add transactions to an interactive table
+  
+* Edit or delete any categories/transactions that have been created
+  
+* View all Income and expenses via interactive charts
+  
+* The application automatically calculates all the incomes and expenses based on the user's input
+  
+* All of the data is stored within an SQL Database even when the application is closed
 
 
 
