@@ -21,7 +21,9 @@ Welcome to my expense tracker where I have developed an application using ASP.NE
 
 
 
+
 * Detailed Overview of my Portfolio: https://github.com/Jamman65/Game-Dev-Portfolio/wiki
+![image](https://github.com/Jamman65/Game-Dev-Portfolio/assets/71873396/59b3658e-cb19-40c2-95d2-a6bbd8e5114e)
 
 # Set Up
 
