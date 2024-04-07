@@ -1,4 +1,4 @@
-# Expense Tracker (ASP.NET C#)
+# Coin Tracker Application (ReactJS, Redux, APIs)
 
 
 
